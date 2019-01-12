@@ -1,0 +1,46 @@
+.navbar {
+  background: none;
+}
+
+.navbar a {
+  color: #b2b2b2 !important;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #f2efef !important;
+}
+
+.jumbo-home {
+  padding-top: 0;
+  border-radius: 0;
+  border-bottom: solid 2px #333;
+  background-image: linear-gradient(
+      rgba(116, 116, 117, 0.65),
+      rgba(116, 116, 117, 0.65)
+    ),
+    url("../images/jumbo-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: beige;
+  text-align: center;
+}
+
+.jumbo-home h2 {
+  font-weight: bolder;
+  font-size: 45px;
+}
+
+.jumbo-home p {
+  font-size: 18px;
+}
+
+.type a {
+  text-decoration: none;
+  color: beige;
+}
+
+.element {
+  display: inline;
+}
+

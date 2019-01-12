@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>DevCKla</title>
-</head>
-<body>
-	<h3>Welcome to the DevCKla Portal</h3>
-	<a href="opensource">Open Source Projects</a>
-<!-- 	<a href="hackathons">Hackathons</a>
-	<a href="opensource">Meetups</a>
-	<a href="opensource">Scholarships</a> -->
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DevCKla</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="jumbotron jumbo-home text-center">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container text-center">
+          <a class="navbar-brand active" href="index.html">DevCKla</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-md-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">MEMBERS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h2 class="type"><span class="element"></span></h2>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+      let options = {
+        strings: [
+          "Hi, there!",
+          "Welcome to DevCKla.",
+          "We are Creative.",
+          "We Love to Develop."
+        ],
+        typeSpeed: 85,
+        backSpeed: 85,
+        loop: true,
+        smartBackspace: true,
+        cursorChar: "|"
+      };
+
+      let typed = new Typed(".element", options);
+    </script>
+  </body>
 </html>

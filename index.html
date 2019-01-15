@@ -1,65 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DevCKla</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="jumbotron jumbo-home text-center">
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container text-center">
-          <a class="navbar-brand active" href="index.html">DevCKla</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-md-center"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">MEMBERS</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <h2 class="type"><span class="element"></span></h2>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container text-center">
+                <a class="navbar-brand active" href="index.html">DevCKla</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">MEMBERS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h2 class="type"><span class="element"></span></h2>
     </div>
+
+    <div class="container">
+        <form class="form-horizontal" role="form">
+            <h2>Registration</h2>
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">Email* </label>
+                <div class="col-sm-9">
+                    <input type="email" id="email" placeholder="Email" class="form-control" name="email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <b for="email" class="col-sm-3 control-label">What level of programming proficiency do you consider yourself to be in your best language</b>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Choose here
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Beginner</a>
+                        <a class="dropdown-item" href="#">Intermediate</a>
+                        <a class="dropdown-item" href="#">Expert</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber" class="col-sm-3 control-label">Phone number </label>
+                <div class="col-sm-9">
+                    <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" class="form-control">
+                    <span class="help-block">Your phone number won't be disclosed to anyone without your permission </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">Github link</label>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="" class="form-control" autofocus>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">Website/Portfilio</label>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="" class="form-control" autofocus>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">LinkedIn profile</label>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="" class="form-control" autofocus>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">Organization/Education institution</label>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="" class="form-control" autofocus>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">Communities affliated</label>
+                <div class="col-sm-9">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> DevCKla</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> For-loop Kampala</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Progate Kla</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> R User Group</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> GDG Kampala</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> GDG-Cloud Kampala</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Pyladies</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Django girls</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Rails Girls</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Ruby Kampala</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> PyKla</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Kotlin Kla</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Attlasian Kla</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> AI Uganda</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-3">Gender</label>
+                <div class="col-sm-6">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Female</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Male</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-3">Social links</label>
+
+                <div class="col-sm-9">
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Facebook</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="firstName" placeholder="" class="form-control" autofocus>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Twitter</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="firstName" placeholder="" class="form-control" autofocus>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Stack Overflow</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="firstName" placeholder="" class="form-control" autofocus>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="firstName" class="control-label">What tech skills / frameworks do you know ?</label>
+                            
+                            <!-- use : https://twitter.github.io/typeahead.js/examples/ -->
+                            <!-- or: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_autocomplete -->
+                            <div class="col-sm-8">
+                                <input type="text" id="firstName" placeholder="" class="form-control" autofocus>
+                            </div>
+
+                            <div class="dropdown">
+                                <label>Rate yourself  </label>
+                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">0</button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button">1</button>
+                                <button class="dropdown-item" type="button">2</button>
+                                <button class="dropdown-item" type="button">3</button>                                
+                                <button class="dropdown-item" type="button">4</button>
+                                <button class="dropdown-item" type="button">5</button>
+                                <button class="dropdown-item" type="button">6</button>
+                                <button class="dropdown-item" type="button">7</button>
+                                <button class="dropdown-item" type="button">8</button>
+                                <button class="dropdown-item" type="button">9</button>
+                                <button class="dropdown-item" type="button">10</button>
+                              </div>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <span class="help-block">*Required fields</span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+        <!-- /form -->
+    </div>
+    <!-- ./container -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/typed.js"></script>
     <script>
-      let options = {
-        strings: [
-          "Hi, there!",
-          "Welcome to DevCKla.",
-          "We are Creative.",
-          "We Love to Develop."
-        ],
-        typeSpeed: 85,
-        backSpeed: 85,
-        loop: true,
-        smartBackspace: true,
-        cursorChar: "|"
-      };
+        $('.dropdown-toggle').dropdown()
 
-      let typed = new Typed(".element", options);
+        let options = {
+            strings: [
+                "Hi, there!",
+                "Welcome to DevCKla.",
+                "We are Creative.",
+                "We Love to Develop."
+            ],
+            typeSpeed: 85,
+            backSpeed: 85,
+            loop: true,
+            smartBackspace: true,
+            cursorChar: "|"
+        };
+
+        let typed = new Typed(".element", options);
     </script>
-  </body>
+</body>
+
 </html>

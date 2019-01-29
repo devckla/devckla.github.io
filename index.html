@@ -35,18 +35,25 @@
   </div> <!-- jumbotron -->
   <div class="container">
     <form class="form-horizontal" role="form">
-      <h2 class="header">DevC Kampala Registration</h2>
+      <h2 class="header">DevCKla Registration</h2>
       <p>Fill the following form to register</p>
+      <section class="personal-info">
       <div class="form-group">
-        <label for="firstName">Name</label>
-        <input type="text" id="firstName" class="form-control"">
+        <label for="firstName">Name<span class="required">*</span></label>
+        <input type="text" id="firstName" class="form-control" placeholder="e.g John Doe">
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" class="form-control" name="email">
+        <label for="email">Email<span class="required">*</span></label>
+        <input type="email" id="email" class="form-control" name="email" placeholder="name@example.com">
       </div>
-      <div class="gender">
-        <label for="form-check" class="inline-label">Gender</label>
+      <div class="form-group">
+        <label for="phoneNumber">Phone number </label>
+        <input type="number" id="phoneNumber" class="form-control" placeholder="e.g. 0712345678">
+        <p class='help-block'>Your phone number won't be disclosed to anyone without your permission.</p>
+      </div>
+      </section>
+      <section class="gender">
+        <p>Gender</p>
         <div class="form-check form-check-inline">
           <input type='radio' id="female" class="form-check-input" />
           <label class="form-check-label" for="female">female</label>
@@ -55,45 +62,12 @@
           <input type='radio' id="male" class="form-check-input" />
           <label class="form-check-label" for="male">male</label>
         </div>
-      </div> <!-- gender -->
-      <div class="skills">
-        <p>What level of programming proficiency do you consider yourself to be in your best language?</p>
-        <label for="form-check" class="inline-label">Skill</label>
-        <div class="form-check form-check-inline">
-          <input type='radio' id="beginner" class="form-check-input" />
-          <label class="form-check-label" for="beginner">beginner</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type='radio' id="intermediate" class="form-check-input" />
-          <label class="form-check-label" for="intermediate">intermediate</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type='radio' id="expert" class="form-check-input" />
-          <label class="form-check-label" for="expert">expert</label>
-        </div>
-      </div>
+      </section> <!-- gender -->
       <div class="form-group">
-        <label for="phoneNumber" class="control-label">Phone number </label>
-        <input type="number" id="phoneNumber" class="form-control">
-        <p class='help-block'>Your phone number won't be disclosed to anyone without your permission.</p>
+        <label for="firstName" class=">Organization/ Education institution</label>
+        <input type="text" id="firstName" placeholder="e.g Stanford" class="form-control">
       </div>
-      <div class="form-group">
-        <label for="firstName" class="control-label">Github link</label>
-        <input type="text" id="firstName" placeholder="" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="firstName" class="control-label">Website/Portfilio</label>
-        <input type="text" id="firstName" placeholder="" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="firstName" class="control-label">LinkedIn profile</label>
-        <input type="text" id="firstName" placeholder="" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="firstName" class=" control-label">Organization/Education institution</label>
-        <input type="text" id="firstName" placeholder="" class="form-control">
-      </div>
-      <div class="affiliated-coms">
+      <section class="affiliated-coms">
         <h3 class="header">Communities affliated</h3>
         <div class="checkbox">
           <input type="checkbox" id="devCKla">
@@ -151,28 +125,56 @@
           <input type="checkbox">
           <label>AI Uganda</label>
         </div>
-      </div> <!-- affiliated coms-->
-      <div class="social-links">
+      </section> <!-- affiliated coms-->
+      <section class="social-links">
         <h3 class="header">Social links</h3>
         <div class="form-group">
-          <label for="staticEmail" class="form-label">Facebook</label>
-          <input type="text" id="firstName" placeholder="" class="form-control">
+          <label for="staticEmail">Facebook</label>
+          <input type="text" id="firstName" placeholder="https://facebook.com/username" class="form-control">
         </div>
         <div class="form-group">
-          <label for="staticEmail" class="form-label">Twitter</label>
-          <input type="text" id="firstName" placeholder="" class="form-control">
+          <label for="staticEmail">Twitter</label>
+          <input type="text" id="firstName" placeholder="https://twitter.com/username" class="form-control">
         </div>
         <div class="form-group">
-          <label for="staticEmail" class="form-label">Stack Overflow</label>
-          <input type="text" id="firstName" placeholder="" class="form-control">
+          <label for="staticEmail">Stack Overflow</label>
+          <input type="text" id="firstName" placeholder="https://stackoverflow.com/username" class="form-control">
         </div>
+      <div class="form-group">
+        <label for="firstName">Github link</label>
+        <input type="text" id="firstName" placeholder="https://github.com/username" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="firstName">Website/Portfilio</label>
+        <input type="text" id="firstName" placeholder="example.com" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="firstName">LinkedIn profile</label>
+        <input type="text" id="firstName" placeholder="https://linkedin.com/username" class="form-control">
+      </div>
+      </section> <!-- social links-->
+      <section class="skills">
+        <h3 class="header">Skills</h3>
         <div class="form-group">
-          <label for="firstName" class="control-label">Which tech skills / frameworks do you know ?</label>
+          <label for="firstName">Which tech skills / frameworks do you know ?</label>
           <!-- use : https://twitter.github.io/typeahead.js/examples/ -->
           <!-- or: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_autocomplete -->
           <input type='text' class="form-control" placeholder="e.g React.js, Ruby" />
         </div>
-      </div> <!-- social links-->
+        <p>What level of programming proficiency do you consider yourself to be in your best language?</p>
+        <div class="form-check form-check-inline">
+          <input type='radio' id="beginner" class="form-check-input" />
+          <label class="form-check-label" for="beginner">beginner</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type='radio' id="intermediate" class="form-check-input" />
+          <label class="form-check-label" for="intermediate">intermediate</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type='radio' id="expert" class="form-check-input" />
+          <label class="form-check-label" for="expert">expert</label>
+        </div>
+      </section> <!-- skills -->
       <button type="submit" class="btn btn-primary">Register</button>
     </form>
     <!-- /form -->

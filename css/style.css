@@ -1,77 +1,51 @@
-.navbar {
-    background: none;
-}
-
-.navbar a {
-    color: #b2b2b2 !important;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: #f2efef !important;
-}
-
 .jumbo-home {
-    padding-top: 0;
     border-radius: 0;
-    border-bottom: solid 2px #333;
-    background-image: linear-gradient( rgba(116, 116, 117, 0.65), rgba(116, 116, 117, 0.65)), url("../images/jumbo-background.jpeg");
+    background: #3b5998;
     background-repeat: no-repeat;
     background-size: cover;
-    color: beige;
+    color: #dfe3ee;
     text-align: center;
 }
 
-.jumbo-home h2 {
-    font-weight: bolder;
-    font-size: 45px;
+.jumbo-home h1 {
+  font-size: 46pt;
 }
 
 .jumbo-home p {
-    font-size: 18px;
+  font-size: 18pt;
 }
 
 .type a {
     text-decoration: none;
-    color: beige;
+    color: #dfe3ee;
 }
 
 .element {
     display: inline;
+    color: #dfe3ee;
 }
 
 body {
     /*background: url('https://static-communitytable.parade.com/wp-content/uploads/2014/03/rethink-target-heart-rate-number-ftr.jpg') fixed;*/
     background-size: cover;
-    background-color: black;
-}
-
-.checkbox label {
-    font-weight: normal !important;
-}
-
-label {
-    font-weight: bold;
+    background: #dfe3ee;
 }
 
 *[role="form"] {
     max-width: 60%;
     /*width: 100%;*/
-    padding: 15px;
+    padding: 1.5em;
     margin: 0 auto;
-    border-radius: 0.3em;
-    background-color: #f2f2f2;
+    border-radius: 0.2em;
+    background-color: #ffffff;
+    border-top: solid 0.3em #8b9dc3;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 *[role="form"] h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    color: #000000;
-    margin-top: 5s%;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    font-size: 24pt;
+    color: #464343;
+    margin-top: 5%;
 }
 
 
@@ -85,4 +59,51 @@ label {
 
 .dropdown {
     font-weight: normal !important;
+}
+
+.btn {
+  background: #3b5998;
+  width: 100%;
+  color: #eff0f1;
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #464343;
+  font-family: 'Sarabun', Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+a, li, span, p, label {
+  font-family: 'Muli', Arial, Helvetica, sans-serif;
+}
+
+.control-label, p {
+  color: #696969;
+  font-weight: 400;
+}
+
+input[type='text'], input[type='email'], input[type='number']  {
+  background:  #eff0f1;
+  border: solid 0.em #fff;
+  border-radius: 0.2em;
+  color: #333;
+  padding: 0.5em;
+}
+
+
+.help-block {
+  border-left: solid 0.3em #8b9dc3;
+  background: #eff0f1;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.form-group {
+  margin-top: 0.5em;
+}
+
+.inline-label {
+  padding-right: 0.5em;
 }

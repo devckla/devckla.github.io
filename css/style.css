@@ -1,3 +1,25 @@
+nav {
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.navbar-brand {
+  color: #3b5998;
+  font-weight: 700;
+  font-size: 16pt;
+  font-family: 'Sarabuna', Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+  color: #464343;
+  font-weight: 400;
+  font-family: 'Muli', Arial, Helvetica, sans-serif;
+}
+
+.nav-link:hover {
+  color: #3b5998;
+}
+
 .jumbo-home {
     border-radius: 0;
     background: #3b5998;
@@ -22,7 +44,9 @@
 
 .element {
     display: inline;
-    color: #dfe3ee;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Sarabuna', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -32,7 +56,7 @@ body {
 }
 
 *[role="form"] {
-    max-width: 60%;
+    max-width: 70%;
     /*width: 100%;*/
     padding: 1.5em;
     margin: 0 auto;

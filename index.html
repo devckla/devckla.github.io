@@ -1,65 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>DevCKla</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="jumbotron jumbo-home text-center">
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container text-center">
-          <a class="navbar-brand active" href="index.html">DevCKla</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-md-center"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">MEMBERS</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <h2 class="type"><span class="element"></span></h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>DevCKla</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli|Sarabun" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md">
+    <div class="container text-center">
+      <a class="navbar-brand active" href="index.html">DevCKla</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"> <a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Members</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+        </ul>
+      </div>
     </div>
+  </nav> <!-- nav -->
+  <div class="jumbotron jumbo-home text-center">
+    <h1 class="type"><span class="element"></span></h1>
+  </div> <!-- jumbotron -->
+  <div class="container">
+    <form class="form-horizontal" role="form">
+      <h2 class="header">DevCKla Registration</h2>
+      <p>Fill the following form to register</p>
+      <section class="personal-info">
+      <div class="form-group">
+        <label for="firstName">Name<span class="required">*</span></label>
+        <input type="text" id="firstName" class="form-control" placeholder="e.g John Doe">
+      </div>
+      <div class="form-group">
+        <label for="email">Email<span class="required">*</span></label>
+        <input type="email" id="email" class="form-control" name="email" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone number </label>
+        <input type="number" id="phoneNumber" class="form-control" placeholder="e.g. 0712345678">
+        <p class='help-block'>Your phone number won't be disclosed to anyone without your permission.</p>
+      </div>
+      </section>
+      <section class="gender">
+        <p>Gender</p>
+        <div class="form-check form-check-inline">
+          <input type='radio' id="female" class="form-check-input" />
+          <label class="form-check-label" for="female">female</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type='radio' id="male" class="form-check-input" />
+          <label class="form-check-label" for="male">male</label>
+        </div>
+      </section> <!-- gender -->
+      <div class="form-group">
+        <label for="firstName" class=">Organization/ Education institution</label>
+        <input type="text" id="firstName" placeholder="e.g Stanford" class="form-control">
+      </div>
+      <section class="affiliated-coms">
+        <h3 class="header">Communities affliated</h3>
+        <div class="checkbox">
+          <input type="checkbox" id="devCKla">
+          <label for="devCKla">DevCKla</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>For-loop Kampala</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>Progate Kla</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>R User Group</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>GDG Kampala</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>GDG-Cloud Kampala</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>Pyladies</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>Django girls</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>Rails Girls</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>Ruby Kampala</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>PyKla</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>Kotlin Kla</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>Attlasian Kla</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>AI Uganda</label>
+        </div>
+      </section> <!-- affiliated coms-->
+      <section class="social-links">
+        <h3 class="header">Social links</h3>
+        <div class="form-group">
+          <label for="staticEmail">Facebook</label>
+          <input type="text" id="firstName" placeholder="https://facebook.com/username" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="staticEmail">Twitter</label>
+          <input type="text" id="firstName" placeholder="https://twitter.com/username" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="staticEmail">Stack Overflow</label>
+          <input type="text" id="firstName" placeholder="https://stackoverflow.com/username" class="form-control">
+        </div>
+      <div class="form-group">
+        <label for="firstName">Github link</label>
+        <input type="text" id="firstName" placeholder="https://github.com/username" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="firstName">Website/Portfilio</label>
+        <input type="text" id="firstName" placeholder="example.com" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="firstName">LinkedIn profile</label>
+        <input type="text" id="firstName" placeholder="https://linkedin.com/username" class="form-control">
+      </div>
+      </section> <!-- social links-->
+      <section class="skills">
+        <h3 class="header">Skills</h3>
+        <div class="form-group">
+          <label for="firstName">Which tech skills / frameworks do you know ?</label>
+          <!-- use : https://twitter.github.io/typeahead.js/examples/ -->
+          <!-- or: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_autocomplete -->
+          <input type='text' class="form-control" placeholder="e.g React.js, Ruby" />
+        </div>
+        <p>What level of programming proficiency do you consider yourself to be in your best language?</p>
+        <div class="form-check form-check-inline">
+          <input type='radio' id="beginner" class="form-check-input" />
+          <label class="form-check-label" for="beginner">beginner</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type='radio' id="intermediate" class="form-check-input" />
+          <label class="form-check-label" for="intermediate">intermediate</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type='radio' id="expert" class="form-check-input" />
+          <label class="form-check-label" for="expert">expert</label>
+        </div>
+      </section> <!-- skills -->
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <!-- /form -->
+  </div>
+  <!-- ./container -->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/typed.js"></script>
-    <script>
-      let options = {
-        strings: [
-          "Hi, there!",
-          "Welcome to DevCKla.",
-          "We are Creative.",
-          "We Love to Develop."
-        ],
-        typeSpeed: 85,
-        backSpeed: 85,
-        loop: true,
-        smartBackspace: true,
-        cursorChar: "|"
-      };
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script>
+    $('.dropdown-toggle').dropdown()
 
-      let typed = new Typed(".element", options);
-    </script>
-  </body>
+    let options = {
+      strings: [
+        "Hi, there!",
+        "Welcome to DevCKla.",
+        "We are Creative.",
+        "We Love to Develop."
+      ],
+      typeSpeed: 85,
+      backSpeed: 85,
+      loop: true,
+      smartBackspace: true,
+      cursorChar: "|"
+    };
+
+    let typed = new Typed(".element", options);
+  </script>
+</body>
+
 </html>

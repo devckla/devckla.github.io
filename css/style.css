@@ -1,46 +1,163 @@
-.navbar {
-  background: none;
+body {
+    /*background: url('https://static-communitytable.parade.com/wp-content/uploads/2014/03/rethink-target-heart-rate-number-ftr.jpg') fixed;*/
+    background-size: cover;
+    background: #eff0f1;
 }
 
-.navbar a {
-  color: #b2b2b2 !important;
+/* buttons */
+.btn {
+  background: #3b5998;
+  width: 100%;
+  color: #eff0f1;
 }
 
-.navbar a:hover,
-.navbar a.active {
-  color: #f2efef !important;
+/* form */
+.form-check-input {
+  background: red;
+  display: none;
 }
 
-.jumbo-home {
-  padding-top: 0;
-  border-radius: 0;
-  border-bottom: solid 2px #333;
-  background-image: linear-gradient(
-      rgba(116, 116, 117, 0.65),
-      rgba(116, 116, 117, 0.65)
-    ),
-    url("../images/jumbo-background.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: beige;
+.form-check-label {
+  background: #eff0f1;
+  width: 150px;
   text-align: center;
+  padding: 0.3em;
+  border-radius: 2.5em;
+  color: #696969;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
 }
 
-.jumbo-home h2 {
-  font-weight: bolder;
-  font-size: 45px;
+*[role="form"] {
+    max-width: 70%;
+    /*width: 100%;*/
+    padding: 1.5em;
+    margin: 0 auto;
+    border-radius: 0.2em;
+    background-color: #ffffff;
+    border-top: solid 0.3em #8b9dc3;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.jumbo-home p {
-  font-size: 18px;
+*[role="form"] h2 {
+    font-size: 24pt;
+    color: #464343;
+    margin-top: 5%;
 }
 
-.type a {
-  text-decoration: none;
-  color: beige;
+.form-check-label:active {
+  background: #3b5998;
+  color: #fff;
+}
+
+.form-check-label:hover {
+  cursor: pointer;
+}
+
+input[type='text'], input[type='email'], input[type='number']  {
+  background:  #eff0f1;
+  border-radius: 0.2em;
+  color: #8b9dc3;
+  padding: 0.4em;
+}
+
+.inline-label {
+  padding-right: 0.5em;
+}
+
+/* typography */
+a, li, span, p, label {
+  font-family: 'Muli', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #464343;
+  font-family: 'Sarabun', Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
 }
 
 .element {
-  display: inline;
+    display: inline;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Sarabuna', Arial, Helvetica, sans-serif;
 }
 
+.header:after {
+  display: block;
+  content: "";
+  border-bottom: solid 0.2em #8b9dc3;
+  border-radius: 0.1em;
+  width: 7%;
+}
+
+.type a {
+    text-decoration: none;
+    color: #dfe3ee;
+}
+
+/* navigation bar */
+nav {
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.navbar-brand {
+  color: #3b5998;
+  font-weight: 700;
+  font-size: 16pt;
+  font-family: 'Muli', Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+  color: #464343;
+  font-weight: 400;
+  font-family: 'Sarabuna', Arial, Helvetica, sans-serif;
+}
+
+.nav-link:hover {
+  color: #3b5998;
+}
+
+/* jumbotron */
+.jumbo-home {
+    border-radius: 0;
+    background: #3b5998;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #dfe3ee;
+    text-align: center;
+}
+
+.jumbo-home h1 {
+  font-size: 46pt;
+}
+
+.jumbo-home p {
+  font-size: 18pt;
+}
+
+.required {
+  color: #c4232b;
+  padding-left: 0.1em;
+  font-weight: 700;
+}
+
+.control-label, p {
+  color: #696969;
+  font-weight: 400;
+}
+
+/* global styles */
+
+.help-block {
+  border-left: solid 0.3em #8b9dc3;
+  background: #eff0f1;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+section {
+  margin-bottom: 0.5em;
+}

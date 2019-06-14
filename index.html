@@ -35,7 +35,7 @@
   </div> <!-- jumbotron -->
   <div class="container">
     <form class="form-horizontal" role="form">
-      <h2 class="header">DevCKla Registration</h2>
+      <h2 class="header">Developer Registration</h2>
       <p>Fill the following form to register</p>
       <section class="personal-info">
       <div class="form-group">
@@ -47,13 +47,19 @@
         <input type="email" id="email" class="form-control" name="email" placeholder="name@example.com">
       </div>
       <div class="form-group">
+        <label for="text">Country of Residence<span class="required">*</span></label>
+        <input type="text" id="location" class="form-control" name="location" placeholder="Uganda">
+      </div>
+      <div class="form-group">
         <label for="phoneNumber">Phone number </label>
         <input type="number" id="phoneNumber" class="form-control" placeholder="e.g. 0712345678">
         <p class='help-block'>Your phone number won't be disclosed to anyone without your permission.</p>
       </div>
       </section>
+
+
       <section class="gender">
-        <p>Gender</p>
+        <p>Sex</p>
         <div class="form-check form-check-inline">
           <input type='radio' id="female" class="form-check-input" />
           <label class="form-check-label" for="female">female</label>
@@ -63,12 +69,14 @@
           <label class="form-check-label" for="male">male</label>
         </div>
       </section> <!-- gender -->
-      <div class="form-group">
-        <label for="firstName" class=">Organization/ Education institution</label>
+
+    <!--   <div class="form-group">
+        <label for="firstName" class="">Organization/ Education institution</label>
         <input type="text" id="firstName" placeholder="e.g Stanford" class="form-control">
-      </div>
+      </div> -->
+
       <section class="affiliated-coms">
-        <h3 class="header">Communities affliated</h3>
+        <h2 class="header">Communities affliated</h3>
         <div class="checkbox">
           <input type="checkbox" id="devCKla">
           <label for="devCKla">DevCKla</label>
@@ -153,15 +161,38 @@
         <input type="text" id="firstName" placeholder="https://linkedin.com/username" class="form-control">
       </div>
       </section> <!-- social links-->
+
       <section class="skills">
         <h3 class="header">Skills</h3>
         <div class="form-group">
-          <label for="firstName">Which tech skills / frameworks do you know ?</label>
+          <label for="frameworks">Which primary skill categories do you identify with?</label>
+          <input type='text' class="form-control" placeholder="e.g DevOps, Front-End"/>
+        <div class="checkbox">
+          <input type="checkbox" id="devCKla">
+          <label for="devCKla">DevOps</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>Full-Stack</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>Front-End</label>
+        </div>
+        
+        </div>
+        <div class="form-group">
+          <label for="languages">Which Programming languages do you use ?</label>
           <!-- use : https://twitter.github.io/typeahead.js/examples/ -->
           <!-- or: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_autocomplete -->
-          <input type='text' class="form-control" placeholder="e.g React.js, Ruby" />
+          <input type='text' class="form-control" placeholder="e.g JavaScript, Ruby" />
         </div>
-        <p>What level of programming proficiency do you consider yourself to be in your best language?</p>
+        <div class="form-group">
+          <label for="firstName">Which Frameworks/Tools have you used ?</label>
+          <input type='text' class="form-control" placeholder="e.g React.js, Rails" />
+        </div>
+
+        <!-- <p>What level of programming proficiency do you consider yourself to be in your best language?</p>
         <div class="form-check form-check-inline">
           <input type='radio' id="beginner" class="form-check-input" />
           <label class="form-check-label" for="beginner">beginner</label>
@@ -173,7 +204,8 @@
         <div class="form-check form-check-inline">
           <input type='radio' id="expert" class="form-check-input" />
           <label class="form-check-label" for="expert">expert</label>
-        </div>
+        </div> -->
+
       </section> <!-- skills -->
       <button type="submit" class="btn btn-primary">Register</button>
     </form>
@@ -200,6 +232,13 @@
       smartBackspace: true,
       cursorChar: "|"
     };
+
+    const languages = ['JavaScript', 'Python', 'Java', 'C++', 'PHP', 'Go', 'C', 'Ruby', 'C#', 'HTML', 'Swift', 'Shell', 'TypeScript', 'Objective-C', 'CSS', 'Jupyter', 'Notebook', 'Rust', 'Kotlin', 'Scala', 'Vim', 'script', 'Vue', 'Clojure', 'R', 'Haskell', 'Emacs', 'Lisp', 'Elixir', 'Lua', 'CoffeeScript', 'Perl', 'PowerShell', 'TeX', 'Dart', 'Erlang', 'Makefile', 'Dockerfile', 'Groovy', 'OCaml', 'Julia', 'MATLAB', 'F#', 'Assembly', 'Pascal', 'Common', 'Lisp', 'Elm', 'CMake', 'D', 'HCL', 'Vala', 'Haxe', 'Batchfile', 'Crystal', 'PLpgSQL', 'Visual Basic', 'Cuda', 'Objective-C++', 'Nim', 'Scheme', 'ShaderLab', 'Roff', 'XSLT', 'ActionScript', 'QML', 'Racket', 'Verilog', 'AutoHotkey', 'PureScript', 'Smarty', 'Processing', 'Nix', 'GLSL', 'WebAssembly', 'Fortran', 'GDScript', 'AppleScript', 'Standard', 'ML', 'Coq', 'PostScript', 'ASP', 'Mathematica', 'Tcl', 'Gherkin', 'VHDL', 'OpenSCAD', 'LLVM', 'Perl', 'PLSQL', 'Solidity', 'Apex', 'SystemVerilog', 'AutoIt', 'ColdFusion', 'FreeMarker', 'Idris', 'Prolog', 'Awk', 'BitBake', 'HLSL', 'LiveScript', 'Max', 'OpenEdge', 'ABL'];
+
+      const frameworks = ['React', 'Ruby', 'on', 'Rails', 'ASP.NET', 'MVC', 'AngularJS', 'Angular', 'Django', 'Vue.js', 'Laravel', 'Spring', 'ASP.NET', 'Express', 'Meteor', 'Flask', 'Symfony', 'CodeIgniter', 'JSF', 'Ember.js', 'CakePHP', 'Web', 'Toolkit', 'Polymer', 'Play', 'Sails.js', 'Zend', 'Tornado', 'Yii', 'Phoenix', 'Sinatra', 'Grails', 'Aurelia', 'Blade', 'Slim', 'Koa', 'Phalcon', 'Vert.x', 'Dropwizard', 'Struts', 'Vapor', 'Gin', 'Dojo'];
+
+      specialization = ['DevOps,', 'Front-End,', 'Data-Science,', 'Info-Sec,', 'IT-Admin,', 'Back-End,', 'Quality-Analysis,', 'Manager,', 'Mobile,', 'Games,', 'VR/AR'];
+
 
     let typed = new Typed(".element", options);
   </script>

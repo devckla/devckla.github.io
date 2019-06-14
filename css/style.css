@@ -160,6 +160,7 @@ nav {
 
 section {
   margin-bottom: 0.5em;
+  margin-top: 5%;
 }
 
 body { padding: 2em; }
@@ -260,3 +261,4 @@ body{
     margin-left: 0;
     margin-right: 0;
 }
+

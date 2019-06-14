@@ -21,9 +21,6 @@
 
 </head>
 <body>
-    <style type="text/css">
-
-    </style>
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
     <div class="container">
@@ -66,38 +63,6 @@
     </div>
 
 </main>
-    <script type="text/javascript">
-            // Example POST method implementation:
-            function register(){
-                var name = form.name.value;
-                var email = form.email.value;
-                var password = form.password.value;
-                
-                postData(`/register`, {name: name, email: email, password: password})
-                  .then(data => console.log(JSON.stringify(data))) // JSON-string from `response.json()` call
-                  .catch(error => console.error(error));
-            };
-
-            function postData(url = "", data = {}) {
-              // Default options are marked with *
-                return fetch(url, {
-                    method: "POST", // *GET, POST, PUT, DELETE, etc.
-                    mode: "cors", // no-cors, cors, *same-origin
-                    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-                    credentials: "same-origin", // include, *same-origin, omit
-                    headers: {
-                        "Content-Type": "application/json",
-                        // "Content-Type": "application/x-www-form-urlencoded",
-                    },
-                    redirect: "follow", // manual, *follow, error
-                    referrer: "no-referrer", // no-referrer, *client
-                    body: JSON.stringify(data), // body data type must match "Content-Type" header
-                })
-                .then(response => response.json()); // parses response to JSON
-            }
-
-    </script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>

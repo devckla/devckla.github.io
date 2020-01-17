@@ -27,4 +27,7 @@ You can get started contributing by reading this [Contributing Guide](https://gi
 2. Emmanuel ?
 3. Kengo Wada (?)
 4. Victor ?
-5. [Rhytah](https://github.com/Rhytah)
+5. Emmanuel N Christian (@Emanuz)
+6. Lutaaya Brian Ivan (@briantical)
+7. [Lydia Sanyu](https://github.com/NLSanyu)
+8. [Rhytah](https://github.com/Rhytah)

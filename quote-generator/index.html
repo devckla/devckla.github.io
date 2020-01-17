@@ -1,0 +1,257 @@
+
+<html>
+
+    <head>
+        <title>DevCKla Quote Generator</title>
+    </head>
+    
+    <body>
+        <style>
+            .container {
+                font-family: Impact;
+                font-size: 1.8em;
+                letter-spacing: 0.1em;
+            }
+    
+            /* canvas {
+                background-image: url(http://i.imgur.com/yf6d9SX.jpg);
+            } */
+    
+            #image-container {
+                display: flex;
+                text-align: center;
+                background: #eee;
+                width: 785px;
+                border: 4px solid #000;
+            }
+    
+            .inputs {
+                padding: 30px;
+                background: black;
+            }
+    
+            input[type=text] {
+                border: none;
+                border-bottom: #fff solid 3px;
+                background: none;
+                color: #fff;
+                font-family: Impact;
+                font-size: 1.5em;
+                letter-spacing: 0.1em;
+                text-align: center;
+            }
+    
+            button {
+                border: 4px solid #fff;
+                background: none;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-weight: 600;
+                margin-top: 30px;
+                font-family: Impact;
+                font-size: 2.5em;
+            }
+    
+            button:hover {
+                color: red;
+                border: 2px solid red;
+            }
+    
+            input[type=text]:focus {
+                outline: 0;
+            }
+    
+            input[type=file] {
+                font-family: Impact;
+                letter-spacing: 0.1em;
+            }
+        </style>
+    
+        <div class="container">
+            <h1>CREATE YOUR QUOTE</h1>
+            <p>Upload an image, type in some lines and save</p>
+            <input type="file" id="file" />
+        </div>
+    
+        <div id="image-container">
+            <canvas width="1200" height="800"></canvas>
+            <div class="inputs">
+                <br />
+                <input id="topLineText" type="text" placeholder="TOP LINE"><br />
+                <br />
+                <input id="bottomLineText" type="text" placeholder="BOTTOM LINE"><br />
+                <button id="saveBtn">Save</button>
+            </div>
+        </div>
+    
+        <img style="display: none;" id='good' src="DevCQuotefinito.png" crossorigin='anonymous'>
+    
+        <div id='download'></div>
+    
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script></body>
+    
+    <script>
+        function textChangeListener(evt) {
+            var id = evt.target.id;
+            var text = evt.target.value;
+    
+            if (id == "topLineText") {
+                window.topLineText = text;
+            } else {
+                window.bottomLineText = text;
+            }
+    
+            redrawMeme(window.imageSrc, window.topLineText, window.bottomLineText);
+        }
+        //------
+        function redrawMeme(image, topLine, bottomLine) {
+            // Get Canvas2DContext
+            var canvas = document.querySelector('canvas');
+            var ctx = canvas.getContext("2d");
+            // if (image != null)
+            //     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+    
+            // clear previous
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+            // if (image != null)
+            var image = document.getElementById('good');
+            ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+    
+            // Text attributes
+            ctx.textAlign = 'center';
+            ctx.fillStyle = 'white';
+    
+            var maxWidth = 1000;
+            var lineHeight = 80;
+            var x = canvas.width / 2;
+            var y = 200;
+    
+            if (topLine != null) {
+                ctx.font = '60pt DejaVu Sans';
+                var text = '< ' + topLine + ' />'
+                wrapText(ctx, text, x, y, maxWidth, lineHeight);
+                // ctx.fillText(text, canvas.width / 2, 140);
+            }
+    
+            if (bottomLine != null) {
+                ctx.font = '40pt DejaVu Sans';
+                ctx.fillText('-- ' + bottomLine, canvas.width / 2, canvas.height - 220);
+            }
+        }
+    
+        function saveFile() {
+            var fullQuality = document.querySelector('canvas').toDataURL();
+            var a = document.createElement('a');
+            a.download = 'author' + '.png';
+            a.href = fullQuality;
+            a.textContent = 'Download PNG';
+            var s = document.getElementById('download');
+            s.appendChild(a);
+        }
+    
+        function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
+            var words = text.split(' ');
+            var line = '';
+    
+            for (var n = 0; n < words.length; n++) {
+                var testLine = line + words[n] + ' ';
+                var metrics = ctx.measureText(testLine);
+                var testWidth = metrics.width;
+                if (testWidth > maxWidth && n > 0) {
+                    ctx.textAlign = 'center';
+                    ctx.fillText(line, x, y);
+                    line = words[n] + ' ';
+                    y += lineHeight;
+                }
+                else {
+                    line = testLine;
+                }
+            }
+            ctx.fillText(line, x, y);
+        }
+    
+        function handleFileSelect(evt) {
+            //make canvas
+            var canvasWidth = 1200;
+            var canvasHeight = 800;
+            var file = evt.target.files[0];
+    
+            //image upload
+            var reader = new FileReader();
+            reader.onload = function (fileObject) {
+                var data = fileObject.target.result;
+    
+                // Create an image object
+                var image = new Image();
+                image.setAttribute('crossorigin', 'anonymous'); // works for me
+    
+                image.onload = function () {
+    
+                    window.imageSrc = this;
+                    redrawMeme(window.imageSrc, null, null);
+                }
+    
+                // Set image data to background image.
+                image.src = data;
+                console.log(fileObject.target.result);
+            };
+            reader.readAsDataURL(file)
+        }
+        window.imageSRC = null;
+        window.topLineText = "";
+        window.bottomLineText = "";
+        window.imageSRC = null;
+        window.topLineText = null;
+        window.bottomLineText = null;
+    
+        var file = document.querySelector("#file");
+        file.onchange = handleFileSelect;
+    
+        var input1 = document.getElementById('topLineText');
+        var input2 = document.getElementById('bottomLineText');
+        input1.oninput = textChangeListener;
+        input2.oninput = textChangeListener;
+        document.getElementById('file').addEventListener('change', handleFileSelect, false);
+        document.querySelector('button').addEventListener('click', saveFile, false);
+    </script>
+    
+    </html>

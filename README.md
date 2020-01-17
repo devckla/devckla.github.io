@@ -27,4 +27,5 @@ You can get started contributing by reading this [Contributing Guide](https://gi
 2. Emmanuel ?
 3. Kengo Wada (?)
 4. Victor ?
-5. Lutaaya Brian Ivan (@briantical)
+5. Emmanuel N Christian (@Emanuz)
+6. Lutaaya Brian Ivan (@briantical)

@@ -27,5 +27,5 @@ You can get started contributing by reading this [Contributing Guide](https://gi
 2. Emmanuel ?
 3. Kengo Wada (?)
 4. Victor ?
-5. Phyllis Nabangi(https://github.com/PhyllisNabangi)
+5. Phyllis Nabangi (https://github.com/PhyllisNabangi)
 

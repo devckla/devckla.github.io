@@ -7,10 +7,10 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Pull Request Process
 
-1. Fork the repo into your account.
+1. Fork the repo to your acccount.
 2. Clone your cloned repo to your account.
 3. Branch off from master to create a new branch where you are to make your changes
-4. Edit and make and add changes where necessary.
+4. Edit and make and add changes where neccesary.
 5. Commit and push to your forked version of the repo.
 6. Make a pull request of your changes to the master branch of this repo.
 7. Request for a Pull request review on our facebook group or by tagging project lead contributors.
@@ -40,7 +40,7 @@ include:
 
 Examples of unacceptable behavior by participants include:
 
-* The use of sexual language or imagery and unwelcome sexual attention or
+* The use of sexualized language or imagery and unwelcome sexual attention or
 advances
 * Trolling, insulting/derogatory comments, and personal or political attacks
 * Public or private harassment

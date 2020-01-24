@@ -18,9 +18,9 @@ You can get started contributing by reading this [Contributing Guide](https://gi
 
 ## Contributors
 
-1. (Edison Abahurire) [https://github.com/SimiCode]
-2. (Emmanuel Daniel)[https://github.com/Emmanuel-Melon]
-3. (Kengo Wada)[https://github.com/KengoWada]
+1. [Edison Abahurire](https://github.com/SimiCode)
+2. [Emmanuel Daniel](https://github.com/Emmanuel-Melon)
+3. [Kengo Wada](https://github.com/KengoWada)
 4. Victor ?
 5. Emmanuel N Christian (@Emanuz)
 6. Lutaaya Brian Ivan (@briantical)

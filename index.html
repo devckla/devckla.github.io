@@ -2,19 +2,28 @@
 <html lang="en">
 
 <head>
+
+    <!-- Meta tags for SEO and responsiveness -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>DevCKla</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Links for the CSS CDNs -->
   <link href="https://fonts.googleapis.com/css?family=Muli|Sarabun" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
-</head>
+
+    <!-- Links to the local CSS files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+
+  <!-- Title of the web page -->
+    <title>DevCKla</title>
+  </head>
 
 <body>
-  <nav class="navbar navbar-expand-md">
+  <!-- <nav class="navbar navbar-expand-md">
     <div class="container text-center">
       <a class="navbar-brand active" href="index.html"><img src="images/logo.jpg" alt=""/>DevCKla</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -23,13 +32,47 @@
       </button>
       <div class="collapse navbar-collapse id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item"> <a class="nav-link active" href="index.html">Home</a></li>
-<!--           <li class="nav-item"><a class="nav-link" href="#">Members</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Events</a></li> -->
+          <li class="nav-item"> <a class="nav-link active" href="index.html">Home</a></li>     <li class="nav-item"><a class="nav-link" href="#">Members</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events</a></li> 
         </ul>
       </div>
     </div>
-  </nav> <!-- nav -->
+  </nav>  -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          >
+          <h1>DevCKla</h1></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#">Communities</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> <!--End of the navabr-->
   <div class="jumbotron jumbo-home text-center">
     <h1 class="type"><span class="element"></span></h1>
   </div> <!-- jumbotron -->
@@ -40,15 +83,15 @@
       <section class="personal-info">
       <div class="form-group">
         <label for="firstName">Name<span class="required">*</span></label>
-        <input type="text" id="firstName" class="form-control" placeholder="e.g John Doe">
+        <input type="text" id="firstName" class="form-control" placeholder="e.g John Doe" required>
       </div>
       <div class="form-group">
         <label for="email">Email<span class="required">*</span></label>
-        <input type="email" id="email" class="form-control" name="email" placeholder="name@example.com">
+        <input type="email" id="email" class="form-control" name="email" placeholder="name@example.com" required>
       </div>
       <div class="form-group">
         <label for="text">Country of Residence<span class="required">*</span></label>
-        <input type="text" id="location" class="form-control" name="location" placeholder="Uganda">
+        <input type="text" id="location" class="form-control" name="location" placeholder="Uganda" required>
       </div>
       <div class="form-group">
         <label for="phoneNumber">Phone number </label>
@@ -139,19 +182,19 @@
         <h3 class="header">Social links</h3>
         <div class="form-group">
           <label for="staticEmail">Facebook</label>
-          <input type="text" id="firstName" placeholder="https://facebook.com/username" class="form-control">
+          <input type="text" id="firstName" placeholder="facebook.com/username" class="form-control">
         </div>
         <div class="form-group">
           <label for="staticEmail">Twitter</label>
-          <input type="text" id="firstName" placeholder="https://twitter.com/username" class="form-control">
+          <input type="text" id="firstName" placeholder="twitter.com/username" class="form-control">
         </div>
         <div class="form-group">
           <label for="staticEmail">Stack Overflow</label>
-          <input type="text" id="firstName" placeholder="https://stackoverflow.com/username" class="form-control">
+          <input type="text" id="firstName" placeholder="stackoverflow.com/username" class="form-control">
         </div>
       <div class="form-group">
         <label for="firstName">Github link</label>
-        <input type="text" id="firstName" placeholder="https://github.com/username" class="form-control">
+        <input type="text" id="firstName" placeholder="github.com/username" class="form-control">
       </div>
       <div class="form-group">
         <label for="firstName">Website/Portfilio</label>
@@ -159,7 +202,7 @@
       </div>
       <div class="form-group">
         <label for="firstName">LinkedIn profile</label>
-        <input type="text" id="firstName" placeholder="https://linkedin.com/username" class="form-control">
+        <input type="text" id="firstName" placeholder="linkedin.com/username" class="form-control">
       </div>
       </section> <!-- social links-->
 

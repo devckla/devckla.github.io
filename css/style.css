@@ -278,6 +278,35 @@ body {
   margin-right: 0;
 }
 
+/*Media Queries for mobile devices*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .form-horizontal {
+   margin-left: 0px;
+   margin-right: 0px;
+  }
+
+  [role="form"] {
+  max-width: 100%;
+  }
+
+  .header::after {
+  margin-top: 10px;
+  }
+
+  .container {
+   padding-left: 0px;
+   padding-right: 0px;
+  }
+
+  .form-horizontal > fieldset:nth-child(1) > legend:nth-child(1) {
+   line-height: 30px;
+   font-size: 1.5rem;
+  }
+
+
+
+}
+
 
 /* Media queries for screens with a max-width of 768px */
 

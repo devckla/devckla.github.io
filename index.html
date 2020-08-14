@@ -4,26 +4,25 @@
 <head>
 
     <!-- Meta tags for SEO and responsiveness -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <!-- Links for the CSS CDNs -->
-  <link href="https://fonts.googleapis.com/css?family=Muli|Sarabun" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-    crossorigin="anonymous">
+    <!-- Links for the CSS CDNs -->
+    <link href="https://fonts.googleapis.com/css?family=Muli|Sarabun" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <!-- Links to the local CSS files -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Title of the web page -->
+
+    <!-- Title of the web page -->
     <title>DevCKla</title>
-  </head>
+</head>
 
 <body>
-  <!-- <nav class="navbar navbar-expand-md">
+    <!-- <nav class="navbar navbar-expand-md">
     <div class="container text-center">
       <a class="navbar-brand active" href="index.html"><img src="images/logo.jpg" alt=""/>DevCKla</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -40,91 +39,95 @@
   </nav>  -->
 
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <h1>DevCKla</h1></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-        >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1>DevCKla</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="navbar-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="navbar-item active">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="navbar-item active">
-              <a class="nav-link" href="#">Communities</a>
-            </li>
-            <li class="navbar-item active">
-              <a class="nav-link" href="#">Team</a>
-            </li>
-            <li class="navbar-item active">
-              <a class="nav-link" href="#">Events</a>
-            </li>
-          </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="#">Communities</a>
+                    </li>
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </nav> <!--End of the navabr-->
-  <div class="jumbotron jumbo-home text-center">
-    <h1 class="type"><span class="element"></span></h1>
-  </div> <!-- jumbotron -->
-  <div class="container mb-5">
+    </nav>
+    <!--End of the navabr-->
+    <div class="jumbotron jumbo-home text-center">
+        <h1 class="type"><span class="element"></span></h1>
+    </div>
+    <!-- jumbotron -->
+    <div class="container mb-5">
 
-    <form class="form-horizontal" role="form">
-      <fieldset>
-        <legend class="header">Developer Registration</legend>
-        <p>Fill the following form to register</p>
+        <form class="form-horizontal" role="form">
+            <fieldset>
+                <legend class="header">Developer Registration</legend>
+                <p>Fill the following form to register</p>
 
-        <section class="personal-info">
-          <div class="form-group">
-            <label for="name">Name<span class="required">*</span></label>
-            <input type="text" id="name" class="form-control" placeholder="e.g John Doe" required>
-          </div>
+                <section class="personal-info">
+                    <div class="form-group">
+                        <label for="name">Name<span class="required">*</span></label>
+                        <input type="text" id="name" class="form-control" placeholder="e.g John Doe" required>
+                    </div>
 
-          <div class="form-group">
-            <label for="email">Email<span class="required">*</span></label>
-            <input type="email" id="email" class="form-control" name="email" placeholder="name@example.com" required>
-          </div>
+                    <div class="form-group">
+                        <label for="email">Email<span class="required">*</span></label>
+                        <input type="email" id="email" class="form-control" name="email" placeholder="name@example.com" required>
+                    </div>
 
-          <div class="form-group">
-            <label for="location">Country of Residence<span class="required">*</span></label>
-            <input type="text" id="location" class="form-control" name="location" placeholder="Uganda" required>
-          </div>
+                    <div class="form-group">
+                        <label for="location">Country of Residence<span class="required">*</span></label>
+                        <input type="text" id="location" class="form-control" name="location" placeholder="Uganda" required>
+                    </div>
 
-          <div class="form-group">
-            <label for="phoneNumber">Phone number </label>
-            <input type="tel" id="phoneNumber" class="form-control" placeholder="e.g. 0712345678">
-            <p class='help-block'>Your phone number won't be disclosed to anyone without your permission.</p>
-          </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone number </label>
+                        <input type="tel" id="phoneNumber" class="form-control" placeholder="e.g. 0712345678">
+                        <p class='help-block'>Your phone number won't be disclosed to anyone without your permission.</p>
+                    </div>
 
-          <div class="form-group">
-            <p>Sex</p>
-            <div class="form-check form-check-inline">
-              <input type='radio' id="female" class="form-check-input" />
-              <label class="form-check-label" for="female">female</label>
-            </div>
+                    <div class="form-group">
+                        <p>Sex</p>
+                        <div class="form-check form-check-inline">
+                            <input type='radio' id="female" class="form-check-input" />
+                            <label class="form-check-label" for="female">female</label>
+                        </div>
 
-            <div class="form-check form-check-inline">
-              <input type='radio' id="male" class="form-check-input" />
-              <label class="form-check-label" for="male">male</label>
-            </div>
-          </div>
-        </section>
+                        <div class="form-check form-check-inline">
+                            <input type='radio' id="male" class="form-check-input" />
+                            <label class="form-check-label" for="male">male</label>
+                        </div>
 
-      </fieldset>
 
-    <!--   <div class="form-group">
+                        <div class="form-check form-check-inline">
+                            <input type='radio' id="others" class="form-check-input" />
+                            <label class="form-check-label" for="others">others</label>
+                        </div>
+                    </div>
+                </section>
+
+            </fieldset>
+
+            <!--   <div class="form-group">
         <label for="firstName" class="">Organization/ Education institution</label>
         <input type="text" id="firstName" placeholder="e.g Stanford" class="form-control">
       </div> -->
-<!-- 
+            <!-- 
       <section class="affiliated-coms">
         <h2 class="header">Communities affliated</h3>
         <div class="checkbox">
@@ -183,74 +186,76 @@
           <input type="checkbox">
           <label>AI Uganda</label>
         </div>
-      </section>  --><!-- affiliated coms-->
+      </section>  -->
+            <!-- affiliated coms-->
 
-      <fieldset class="social-links">
-        <legend class="header">Social links</legend>
-        
-        <div class="form-group">
-          <label for="user_facebook">Facebook</label>
-          <input type="text" id="user_facebook" placeholder="facebook.com/username" class="form-control">
-        </div>
+            <fieldset class="social-links">
+                <legend class="header">Social links</legend>
 
-        <div class="form-group">
-          <label for="user_twitter">Twitter</label>
-          <input type="text" id="user_twitter" placeholder="twitter.com/username" class="form-control">
-        </div>
+                <div class="form-group">
+                    <label for="user_facebook">Facebook</label>
+                    <input type="text" id="user_facebook" placeholder="facebook.com/username" class="form-control">
+                </div>
 
-        <div class="form-group">
-          <label for="user_stackoverflow">Stack Overflow</label>
-          <input type="text" id="user_stackoverflow" placeholder="stackoverflow.com/username" class="form-control">
-        </div>
+                <div class="form-group">
+                    <label for="user_twitter">Twitter</label>
+                    <input type="text" id="user_twitter" placeholder="twitter.com/username" class="form-control">
+                </div>
 
-        <div class="form-group">
-          <label for="user_github">Github link</label>
-          <input type="text" id="user_github" placeholder="github.com/username" class="form-control">
-        </div>
+                <div class="form-group">
+                    <label for="user_stackoverflow">Stack Overflow</label>
+                    <input type="text" id="user_stackoverflow" placeholder="stackoverflow.com/username" class="form-control">
+                </div>
 
-        <div class="form-group">
-          <label for="user_portfolio">Website/Portfilio</label>
-          <input type="text" id="user_portfolio" placeholder="example.com" class="form-control">
-        </div>
+                <div class="form-group">
+                    <label for="user_github">Github link</label>
+                    <input type="text" id="user_github" placeholder="github.com/username" class="form-control">
+                </div>
 
-        <div class="form-group">
-          <label for="user_linkedin">LinkedIn profile</label>
-          <input type="text" id="user_linkedin" placeholder="linkedin.com/in/username" class="form-control">
-        </div>
-      </fieldset> <!-- social links-->
+                <div class="form-group">
+                    <label for="user_portfolio">Website/Portfilio</label>
+                    <input type="text" id="user_portfolio" placeholder="example.com" class="form-control">
+                </div>
 
-      <fieldset class="skills">
-        <legend class="header">Skills</legend>
+                <div class="form-group">
+                    <label for="user_linkedin">LinkedIn profile</label>
+                    <input type="text" id="user_linkedin" placeholder="linkedin.com/in/username" class="form-control">
+                </div>
+            </fieldset>
+            <!-- social links-->
 
-        <div class="form-group">
-          <label for="skills">Which primary skill categories do you identify with?</label>
+            <fieldset class="skills">
+                <legend class="header">Skills</legend>
 
-        <div class="checkbox">
-          <input type="checkbox" id="DevOps" name="skills" value="DevOps">
-          <label for="DevOps">DevOps</label>
-        </div>
+                <div class="form-group">
+                    <label for="skills">Which primary skill categories do you identify with?</label>
 
-        <div class="checkbox">
-          <input type="checkbox" id="full-stack" name="skills" value="full-stack">
-          <label for="full-stack">Full-Stack</label>
-        </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="DevOps" name="skills" value="DevOps">
+                        <label for="DevOps">DevOps</label>
+                    </div>
 
-        <div class="checkbox">
-          <input type="checkbox" id="front-end" name="skills" value="front-end">
-          <label for="front-end">Front-End</label>
-        </div>
-        
-        <div class="form-group">
-          <label for="languages">Which Programming languages do you use ?</label>
-          <input type='text' id="languages" class="form-control" placeholder="e.g JavaScript, Ruby" />
-        </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="full-stack" name="skills" value="full-stack">
+                        <label for="full-stack">Full-Stack</label>
+                    </div>
 
-        <div class="form-group">
-          <label for="frameworks">Which Frameworks/Tools have you used ?</label>
-          <input type='text' id="frameworks" class="form-control" placeholder="e.g React.js, Rails" />
-        </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="front-end" name="skills" value="front-end">
+                        <label for="front-end">Front-End</label>
+                    </div>
 
-        <!-- <p>What level of programming proficiency do you consider yourself to be in your best language?</p>
+                    <div class="form-group">
+                        <label for="languages">Which Programming languages do you use ?</label>
+                        <input type='text' id="languages" class="form-control" placeholder="e.g JavaScript, Ruby" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="frameworks">Which Frameworks/Tools have you used ?</label>
+                        <input type='text' id="frameworks" class="form-control" placeholder="e.g React.js, Rails" />
+                    </div>
+
+                    <!-- <p>What level of programming proficiency do you consider yourself to be in your best language?</p>
         <div class="form-check form-check-inline">
           <input type='radio' id="beginner" class="form-check-input" />
           <label class="form-check-label" for="beginner">beginner</label>
@@ -263,71 +268,75 @@
           <input type='radio' id="expert" class="form-check-input" />
           <label class="form-check-label" for="expert">expert</label>
         </div> -->
-      </fieldset> <!-- skills -->
-      <button type="submit" class="btn btn-primary btn-lg mt-3 mb-3">Register</button>
-    </form>
-    <!-- /form -->
-  </div>
-  <!-- ./container -->
+            </fieldset>
+            <!-- skills -->
+            <button type="submit" class="btn btn-primary btn-lg mt-3 mb-3">Register</button>
+        </form>
+        <!-- /form -->
+        </div>
+        <!-- ./container -->
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/typed.js"></script>
-  <script>
-    $('.dropdown-toggle').dropdown()
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typed.js"></script>
+        <script>
+            $('.dropdown-toggle').dropdown()
 
-    let options = {
-      strings: [
-        "Hi, there!",
-        "Welcome to DevCKla.",
-        "We are Creative.",
-        "We Love to Develop."
-      ],
-      typeSpeed: 85,
-      backSpeed: 85,
-      loop: true,
-      smartBackspace: true,
-      cursorChar: "|"
-    };
+            let options = {
+                strings: [
+                    "Hi, there!",
+                    "Welcome to DevCKla.",
+                    "We are Creative.",
+                    "We Love to Develop."
+                ],
+                typeSpeed: 85,
+                backSpeed: 85,
+                loop: true,
+                smartBackspace: true,
+                cursorChar: "|"
+            };
 
-    const languages = ['JavaScript', 'Python', 'Java', 'C++', 'PHP', 'Go', 'C', 'Ruby', 'C#', 'HTML', 'Swift', 'Shell', 'TypeScript', 'Objective-C', 'CSS', 'Jupyter', 'Notebook', 'Rust', 'Kotlin', 'Scala', 'Vim', 'script', 'Vue', 'Clojure', 'R', 'Haskell', 'Emacs', 'Lisp', 'Elixir', 'Lua', 'CoffeeScript', 'Perl', 'PowerShell', 'TeX', 'Dart', 'Erlang', 'Makefile', 'Dockerfile', 'Groovy', 'OCaml', 'Julia', 'MATLAB', 'F#', 'Assembly', 'Pascal', 'Common', 'Lisp', 'Elm', 'CMake', 'D', 'HCL', 'Vala', 'Haxe', 'Batchfile', 'Crystal', 'PLpgSQL', 'Visual Basic', 'Cuda', 'Objective-C++', 'Nim', 'Scheme', 'ShaderLab', 'Roff', 'XSLT', 'ActionScript', 'QML', 'Racket', 'Verilog', 'AutoHotkey', 'PureScript', 'Smarty', 'Processing', 'Nix', 'GLSL', 'WebAssembly', 'Fortran', 'GDScript', 'AppleScript', 'Standard', 'ML', 'Coq', 'PostScript', 'ASP', 'Mathematica', 'Tcl', 'Gherkin', 'VHDL', 'OpenSCAD', 'LLVM', 'Perl', 'PLSQL', 'Solidity', 'Apex', 'SystemVerilog', 'AutoIt', 'ColdFusion', 'FreeMarker', 'Idris', 'Prolog', 'Awk', 'BitBake', 'HLSL', 'LiveScript', 'Max', 'OpenEdge', 'ABL'];
+            const languages = ['JavaScript', 'Python', 'Java', 'C++', 'PHP', 'Go', 'C', 'Ruby', 'C#', 'HTML', 'Swift', 'Shell', 'TypeScript', 'Objective-C', 'CSS', 'Jupyter', 'Notebook', 'Rust', 'Kotlin', 'Scala', 'Vim', 'script', 'Vue', 'Clojure', 'R', 'Haskell', 'Emacs', 'Lisp', 'Elixir', 'Lua', 'CoffeeScript', 'Perl', 'PowerShell', 'TeX', 'Dart', 'Erlang', 'Makefile', 'Dockerfile', 'Groovy', 'OCaml', 'Julia', 'MATLAB', 'F#', 'Assembly', 'Pascal', 'Common', 'Lisp', 'Elm', 'CMake', 'D', 'HCL', 'Vala', 'Haxe', 'Batchfile', 'Crystal', 'PLpgSQL', 'Visual Basic', 'Cuda', 'Objective-C++', 'Nim', 'Scheme', 'ShaderLab', 'Roff', 'XSLT', 'ActionScript', 'QML', 'Racket', 'Verilog', 'AutoHotkey', 'PureScript', 'Smarty', 'Processing', 'Nix', 'GLSL', 'WebAssembly', 'Fortran', 'GDScript', 'AppleScript', 'Standard', 'ML', 'Coq', 'PostScript', 'ASP', 'Mathematica', 'Tcl', 'Gherkin', 'VHDL', 'OpenSCAD', 'LLVM', 'Perl', 'PLSQL', 'Solidity', 'Apex', 'SystemVerilog', 'AutoIt', 'ColdFusion', 'FreeMarker', 'Idris', 'Prolog', 'Awk', 'BitBake', 'HLSL', 'LiveScript', 'Max', 'OpenEdge', 'ABL'];
 
-      const frameworks = ['React', 'Ruby', 'on', 'Rails', 'ASP.NET', 'MVC', 'AngularJS', 'Angular', 'Django', 'Vue.js', 'Laravel', 'Spring', 'ASP.NET', 'Express', 'Meteor', 'Flask', 'Symfony', 'CodeIgniter', 'JSF', 'Ember.js', 'CakePHP', 'Web', 'Toolkit', 'Polymer', 'Play', 'Sails.js', 'Zend', 'Tornado', 'Yii', 'Phoenix', 'Sinatra', 'Grails', 'Aurelia', 'Blade', 'Slim', 'Koa', 'Phalcon', 'Vert.x', 'Dropwizard', 'Struts', 'Vapor', 'Gin', 'Dojo'];
+            const frameworks = ['React', 'Ruby', 'on', 'Rails', 'ASP.NET', 'MVC', 'AngularJS', 'Angular', 'Django', 'Vue.js', 'Laravel', 'Spring', 'ASP.NET', 'Express', 'Meteor', 'Flask', 'Symfony', 'CodeIgniter', 'JSF', 'Ember.js', 'CakePHP', 'Web', 'Toolkit', 'Polymer', 'Play', 'Sails.js', 'Zend', 'Tornado', 'Yii', 'Phoenix', 'Sinatra', 'Grails', 'Aurelia', 'Blade', 'Slim', 'Koa', 'Phalcon', 'Vert.x', 'Dropwizard', 'Struts', 'Vapor', 'Gin', 'Dojo'];
 
-      specialization = ['DevOps,', 'Front-End,', 'Data-Science,', 'Info-Sec,', 'IT-Admin,', 'Back-End,', 'Quality-Analysis,', 'Manager,', 'Mobile,', 'Games,', 'VR/AR'];
+            specialization = ['DevOps,', 'Front-End,', 'Data-Science,', 'Info-Sec,', 'IT-Admin,', 'Back-End,', 'Quality-Analysis,', 'Manager,', 'Mobile,', 'Games,', 'VR/AR'];
 
-    let typed = new Typed(".element", options);
+            let typed = new Typed(".element", options);
 
-      // Example POST method implementation:
-      function register(){
-          var name = form.name.value;
-          var email = form.email.value;
-          var password = form.password.value;
-          
-          postData(`/register`, {name: name, email: email, password: password})
-            .then(data => console.log(JSON.stringify(data))) // JSON-string from `response.json()` call
-            .catch(error => console.error(error));
-      };
+            // Example POST method implementation:
+            function register() {
+                var name = form.name.value;
+                var email = form.email.value;
+                var password = form.password.value;
 
-      function postData(url = "", data = {}) {
-        // Default options are marked with *
-          return fetch(url, {
-              method: "POST", // *GET, POST, PUT, DELETE, etc.
-              mode: "cors", // no-cors, cors, *same-origin
-              cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-              credentials: "same-origin", // include, *same-origin, omit
-              headers: {
-                  "Content-Type": "application/json",
-                  // "Content-Type": "application/x-www-form-urlencoded",
-              },
-              redirect: "follow", // manual, *follow, error
-              referrer: "no-referrer", // no-referrer, *client
-              body: JSON.stringify(data), // body data type must match "Content-Type" header
-          })
-          .then(response => response.json()); // parses response to JSON
-      }
+                postData(`/register`, {
+                        name: name,
+                        email: email,
+                        password: password
+                    })
+                    .then(data => console.log(JSON.stringify(data))) // JSON-string from `response.json()` call
+                    .catch(error => console.error(error));
+            };
 
-  </script>
+            function postData(url = "", data = {}) {
+                // Default options are marked with *
+                return fetch(url, {
+                        method: "POST", // *GET, POST, PUT, DELETE, etc.
+                        mode: "cors", // no-cors, cors, *same-origin
+                        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+                        credentials: "same-origin", // include, *same-origin, omit
+                        headers: {
+                            "Content-Type": "application/json",
+                            // "Content-Type": "application/x-www-form-urlencoded",
+                        },
+                        redirect: "follow", // manual, *follow, error
+                        referrer: "no-referrer", // no-referrer, *client
+                        body: JSON.stringify(data), // body data type must match "Content-Type" header
+                    })
+                    .then(response => response.json()); // parses response to JSON
+            }
+        </script>
 </body>
 
 </html>
